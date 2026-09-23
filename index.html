@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="bg-light">
+
+    <div class="container py-5">
+
+        <div class="card p-4 shadow-sm mb-4">
+            <h4 class="mb-3">Add New Task</h4>
+
+            <input type="text" id="taskName" class="form-control mb-2" placeholder="Task Name">
+            <input type="text" id="taskDesc" class="form-control mb-3" placeholder="Task Description">
+
+            <button id="addTask" class="btn btn-primary w-100">Add Task</button>
+        </div>
+
+        <div class="d-flex justify-content-center gap-2 mb-4">
+            <button class="btn btn-outline-primary" id="All">All</button>
+            <button class="btn btn-outline-success" id="Completed">Completed</button>
+            <button class="btn btn-outline-warning" id="Waiting">Waiting</button>
+            <button class="btn btn-outline-danger" id="Delete">Delete</button>
+        </div>
+
+        <div class="card shadow-sm p-3">
+            <table class="table text-center align-middle">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody></tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
